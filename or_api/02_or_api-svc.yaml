@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orapi-svc
+  namespace: sandbox
+  labels:
+    app: orapi
+spec:
+  selector:
+    app: orapi
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+
+
+

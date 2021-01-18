@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orapi
+  namespace: sandbox
+  labels:
+    app: orapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orapi
+  template:
+    metadata:
+      labels:
+        app: orapi
+    spec:
+      containers:
+        - image: harbor.ork.orhro.com/orapi/or_api
+          name: orapi
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
