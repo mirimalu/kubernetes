@@ -18,4 +18,8 @@ spec:
               number: 80
         path: /
         pathType: Prefix
+status:
+  loadBalancer:
+    ingress:
+    - {}
 
