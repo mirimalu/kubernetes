@@ -5,7 +5,7 @@ metadata:
   namespace: sandbox
   annotations:
     kubernetes.io/ingress.class: "traefik"
-    traefik.ingress.kubernetes.io/router.entrypoints: web    
+    traefik.ingress.kubernetes.io/router.entrypoints: web, websecure    
 spec:
   rules:
   - host: orapi.ork.orhro.com
