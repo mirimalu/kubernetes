@@ -21,5 +21,4 @@ spec:
 status:
   loadBalancer:
     ingress:
-    - {}
-
+    - hostname: placeholder
