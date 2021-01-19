@@ -16,8 +16,15 @@ spec:
         app: orapi
     spec:
       containers:
-        - image: harbor.ork.orhro.com/orapi/or_api
-          name: orapi
+        - name: orapi
+          image: harbor.ork.orhro.com/orapi/or_api
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
