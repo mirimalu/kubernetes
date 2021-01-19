@@ -40,6 +40,4 @@ spec:
         path: /
         pathType: Prefix
 status:
-  loadBalancer:
-    ingress:
-    - {}
+  loadBalancer: {}
